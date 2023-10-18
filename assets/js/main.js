@@ -66,7 +66,7 @@ function scrollActive(){
              sectionTop = current.offsetTop -58,
              sectionId = current.getAttribute('id')
 
-        if(scroLLy > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' +sectionId + ']').classList.add('active-link')
         }else{
             document.querySelector('.nav__menu a[href*=' +sectionId + ']').classList.remove('active-link')
@@ -76,6 +76,13 @@ function scrollActive(){
 
 window.addEventListener('scroll', scrollActive)
 /*=============== LIGHT DARK THEME ===============*/ 
+const themeButton = document.getElementById('theme-button')
+const theme = 'light-theme'
+const icontheme= 'bx-sun' 
+
+// Previously selected topic(if ever used)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localstorage.getItem('selected-icon')
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
