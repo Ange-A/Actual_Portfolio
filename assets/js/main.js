@@ -84,6 +84,20 @@ const icontheme= 'bx-sun'
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localstorage.getItem('selected-icon')
 
+// We obtain the current theme that the interfave has by validating the dark-theme class
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark': 'light'
+const getCurrentIcon = () => themeButton.classList.contains(IconTheme) ? 'bx bx-moon': 'bx bx-sun'
+
+// We validate if the user previously chose a topic
+
+if (selectedTheme){
+    // if the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectionIcon === 'bx bx-moon' ? 'add': 'remove'](iconTheme)
+}
+
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
