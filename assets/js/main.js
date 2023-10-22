@@ -95,7 +95,7 @@ if (selectedTheme) {
     // if the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
 
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectionIcon === 'bx bx-moon' ? 'add': 'remove'](iconTheme)
+    ThemeButton.classList[selectionIcon === 'bx bx-moon' ? 'add': 'remove'] iconTheme)
 }
 
 
