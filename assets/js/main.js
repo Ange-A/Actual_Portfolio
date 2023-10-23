@@ -77,7 +77,6 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== LIGHT DARK THEME ===============*/ 
-
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme= 'bx-sun'
@@ -89,15 +88,15 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interfave has by validating the dark-theme class
 
-const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark': 'light'
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'light': 'dark'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon': 'bx bx-sun'
 
 
 // We validate if the user previously chose a topic
 
 if (selectedTheme) {
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 //Activate / deactive the theme annually with the button
@@ -111,6 +110,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 
 })
+
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
