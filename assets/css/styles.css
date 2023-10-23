@@ -124,6 +124,7 @@ img {
 }
 
 /*========== Variables Light theme ==========*/
+
 body.light-theme{
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
