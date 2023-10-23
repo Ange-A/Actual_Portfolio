@@ -77,7 +77,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
-const theme = 'light-theme'
+const theme = 'dark-theme'
 const icontheme= 'bx-sun'
 
 // Previously selected topic(if ever used)
