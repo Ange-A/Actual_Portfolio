@@ -2,7 +2,7 @@
 function scrollHeader(){
     const header = document.getElementById('header')
     //when the scroll is greater than 50 viewport height, add
-    if(this.scrolly >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if(window.pageYOffset >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 /*=============== SERVICES MODAL ===============*/
@@ -59,7 +59,7 @@ linkwork.forEach(L=> L.addEventListener('click', activework) )
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
-    const scroLLy = window.pageYOffset
+    const scrolly = window.pageYOffset
 
     sections.forEach(current => {
        const sectionHeight = current.offsetHeight,
