@@ -159,6 +159,15 @@ body.light-theme{
 .light-theme .home__social::after{
   background-color: var(--title-color);
 }
+
+.light-theme .home__social-link,
+.light-theme .home__scroll,
+.light-theme .button,
+.light-theme .button:hover{
+  color: var(--title-color);
+}
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
