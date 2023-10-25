@@ -167,7 +167,15 @@ body.light-theme{
   color: var(--title-color);
 }
 
+.light-theme .about__box{
+  box-shadow: 0 2px 8px hsla(var(--second-hue),48%, 8%, .1);
+}
 
+.light-theme .skills__content,
+.light-theme .sevices__card,
+.light-theme .work__card{
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -265,7 +273,7 @@ body.light-theme{
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
             );
   box-shadow:  0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
-
+  color: var(--title-color);
 }
 
 
