@@ -982,7 +982,38 @@ body.light-theme{
   .skills__content{
     padding: 2rem 4rem;
   }
-};
+
+  .services__container{
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+  }
+
+  .services__model-content{
+    width: 500px;
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+  .services__modal-description{
+    padding: 0 3.5rem;
+  }
+
+  .work__container{
+    justify-content: center;
+  }
+  
+  .work__img{
+    width: 295px;
+  }
+
+  .contact__info{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+
+  .contact__form{
+    width: 360px;
+    margin: 0 auto;
+  }
+}
 
 
 /* For large devices */
