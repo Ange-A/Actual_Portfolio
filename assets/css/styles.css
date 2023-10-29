@@ -228,7 +228,7 @@ body.light-theme{
 
 .section__subtitle {
   display: block;
-  font-size: var(--smaller-font-size);
+  
   color: var(--text-color-light);
 }
 
